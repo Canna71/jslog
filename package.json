@@ -1,0 +1,24 @@
+{
+  "name": "jslog",
+  "version": "1.0.0",
+  "description": "A Prolog interpreter",
+  "main": "js/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "jacob": "^1.0.4"
+  },
+  "devDependencies": {
+    "browserify": "latest",
+    "watchify": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-js": "browserify test/prog5.js > js/bundle.js",
+    "watch-js": "watchify js/prog5.js -o js/bundle.js",
+    "start": "node js/index.js"
+  },
+  "author": "Gabriele Cannata",
+  "license": "ISC"
+}
